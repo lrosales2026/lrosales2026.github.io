@@ -2,9 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -12,7 +9,7 @@
         
         <style>
             body {
-                width: 94%;
+                width: 96%;
                 margin-left: auto;
                 margin-right: auto;
                 background-color: #EDEAE3;
@@ -87,7 +84,7 @@
 
             #header {
                 background-image: url('https://img.freepik.com/free-photo/young-woman-arranging-her-cake-shop_23-2149210438.jpg?w=2000');
-                height: 600px;
+                height: 610px;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -110,14 +107,14 @@
                 height: 150px;
             }
             #about {
-                width: 64%;
+                width: 50%;
                 height: 150px;
                 float: left;
 				background-color: #F2F2F2;
             }
             #side {
                 font-family: 'Montserrat', sans-serif;
-                width: 36%;
+                width: 50%;
                 height: 150px;
                 float: left;
                 text-align: right;
@@ -126,6 +123,51 @@
             #seller {
                 text-align: center;
             }
+
+
+            .video-container {
+                padding: 30% 0;
+                width: 100%;
+                position: relative;
+            }
+
+            #video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+            
+            .bg-text {
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.4);
+                color: white;
+                font-weight: bold;
+                border: 3px solid #f1f1f1;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 80%;
+                padding: 20px;
+                text-align: center;
+            }
+
+            #website-logo {
+                width: 25%;
+                height: 230px;
+                float: left;
+            }
+            #contact {
+                font-family: 'Montserrat', sans-serif;
+                width: 50%;
+                height: 230px;
+                float: left;
+                text-align: left;
+            }
+
         </style>
     </head>
     <body>
@@ -164,7 +206,6 @@
 
         <section id="seller">
             <br>
-	    <h1 style="font-family: 'Hachi Maru Pop', cursive; font-size: 25pt;">DISCOVER</h1>
             <h2>~ OUR BEST SELLERS ~</h2>
             <p style="text-align: center;"><a href="menu.html">visit our menu</a></p>
             <br>
@@ -198,8 +239,23 @@
             <p>a small cake baked in a small, thin paper cup.</p>
             <p>cocoa or unsweetened chocolate along with flour as main ingredients.</p>
         </aside>
-            
         
+
+
+        <div class="video-container">
+            <video class="video" id="video" autoplay="autoplay" loop="loop" muted="muted" preload="auto">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-coffee-maker-making-coffee-3578-large.mp4" type="video/mp4">
+            </video>
+            <div class="bg-text">
+                <section id="website-logo">
+                    <img src="yours_truly.png" height="240px" width="320px">
+                </section>
+                <section id="contact">
+                    <br>
+                    <p>Coffee Project is not just an ordinary café; besides our best-tasting coffee and beverages, we also serve a wide variety of appetizing food like cakes, pasta, rice meals, and sandwiches.</p>
+                </section>
+            </div>
+        </div>
 
         <footer>
             <hr/>
