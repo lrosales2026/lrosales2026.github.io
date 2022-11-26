@@ -8,6 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lora&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <title>Yours Truly: Cafe</title>
         
         <style>
@@ -68,6 +71,7 @@
 
             a:link {
                 color: #732929;
+                border-radius: 10px;
                 padding: 10px 15px;
                 background-color: #D9CDBF;
                 text-decoration: none;
@@ -130,7 +134,7 @@
                 text-align: center;
             }
 
-
+            /*video stuff with contact*/
             .video-container {
                 padding: 30% 0;
                 width: 100%;
@@ -162,14 +166,15 @@
                 border-radius: 10px;
             }
 
+            /*contact stuff below*/
             #website-logo {
-                width: 25%;
+                width: 30%;
                 height: 230px;
                 float: left;
             }
             #contact {
                 font-family: 'Montserrat', sans-serif;
-                width: 55%;
+                width: 50%;
                 height: 230px;
                 float: left;
                 text-align: left;
@@ -186,6 +191,7 @@
         </style>
     </head>
     <body>
+        <p id="top"></p>
         <section id="header">
             <header>
                 <h1 id="pagetitle1">YOURS TRULY: CAFE</h1>
@@ -193,22 +199,22 @@
             </header>
         </section>
 
-        <section>
+        <div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-        </section>
+        </div>
 
         <section id="main">
-            <section id="about">
+            <div id="about">
                 <br>
                 <blockquote>
                 <h2>Welcome to Yours Truly! (Cafe Version)</h2>
                 <p>A virtual cafe just for you. Take a seat and stay awhile!</p>
                 </blockquote>
-            </section>
+            </div>
             <section id="side">
                 <br>
                 <blockquote>
@@ -220,16 +226,16 @@
         </section>
 
         <section id="seller">
-            <br>
-            <h2>~ OUR BEST SELLERS ~</h2>
-            <p style="text-align: center;"><a href="menu.html">visit our menu</a></p>
+            <p id="best-sellers"></p>
+            <hr><br><br>
+            <h2><a href="#best-sellers">OUR BEST SELLERS</a></h2>
             <br>
         </section>
 
         <aside>
             <h3>FOOD</h3>
             <figure>
-            <img src="beef_tapa.png" height="300px" width="300px">
+            <img src="beef_tapa.png" alt="Beef Tapa" height="300" width="300">
             <figcaption>BEEF TAPA</figcaption>
             </figure>
             <p>a dish made of thinly-sliced beef, chicken, pork, or carabao.</p>
@@ -239,7 +245,7 @@
 
             <h3>BEVERAGE</h3>
             <figure>
-            <img src="coffee_latte.png" height="300px" width="300px">
+            <img src="coffee_latte.png" alt="Coffee Latte" height="300" width="300">
             <figcaption>HOT COFFEE LATTE</figcaption>
             </figure>
             <p>a concoction of hard brewed espresso with sweetened milk and milk foam to top it up.</p>
@@ -248,11 +254,15 @@
             
             <h3>DESSERT</h3>
             <figure>
-            <img src="chocolate_cupcake.png" height="300px" width="300px">
+            <img src="chocolate_cupcake.png" alt="Chocolate Cupcake" height="300" width="300">
             <figcaption>CHOCOLATE CUPCAKE</figcaption>
             </figure>
             <p>a small cake baked in a small, thin paper cup.</p>
             <p>cocoa or unsweetened chocolate along with flour as main ingredients.</p>
+
+            <br><br>
+            <p style="text-align: center;"><a href="menu.html">wanna order? visit our menu!</a></p>
+            <br>
         </aside>
         
 
@@ -262,26 +272,29 @@
                 <source src="https://assets.mixkit.co/videos/preview/mixkit-coffee-maker-making-coffee-3578-large.mp4" type="video/mp4">
             </video>
             <div class="bg-text">
-                <section id="website-logo">
-                    <img src="yours_truly.png" height="240px" width="320px">
-                </section>
-                <section id="contact">
+                <div id="website-logo">
+                    <img src="yours_truly.png" alt="Yours Truly Logo" height="240" width="320">
+                </div>
+                <div id="contact">
                     <br><br>
                     <blockquote>
                     <p>Yours Truly: Cafe is not just an ordinary cafe; besides our best-tasting coffee and beverages, we also serve a wide variety of appetizing food like rice meals, sandwiches, and desserts.</p>
+                    <br>
+                    <p>All you need to feel better is coffee! Order now~</p>
                     </blockquote>
-                </section>
-		<section id="about-us">
-                <br><br><br>
-                <p style="text-align: center;"><a href="menu.html">Contact Us!</a></p>
-                <br>
-                <p style="text-align: center;"><a href="about.html">About Us~</a></p>
-                </section>
+                </div>
+		        <div id="about-us">
+                    <br><br><br>
+                    <p style="text-align: center;"><a href="contact.html">Contact Us!</a></p>
+                    <br>
+                    <p style="text-align: center;"><a href="about.html">About Us~</a></p>
+                </div>
             </div>
         </div>
 
         <footer>
-            <hr/>
+            <p><a href="#top">^ back to the top ^</a></p>
+            <br><hr>
             <p>Copyright &copy; 2022. Yours Truly. All Rights Reserved.</p>
         </footer>
     </body>
